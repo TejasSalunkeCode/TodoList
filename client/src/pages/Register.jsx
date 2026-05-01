@@ -64,8 +64,12 @@ const Register = () => {
             Join thousands of high performers and transform your daily productivity.
           </p>
         </div>
+        {/* 3D Spline Animation */}
+        <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0 }}>
+          <spline-viewer url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode" style={{ width: '100%', height: '100%' }}></spline-viewer>
+        </div>
         {/* Animated Orbs */}
-        <div style={{ position: 'absolute', top: '10%', right: '-5%', width: '50%', height: '50%', background: 'radial-gradient(circle, rgba(16,185,129,0.2) 0%, transparent 70%)', filter: 'blur(80px)' }}></div>
+        <div style={{ position: 'absolute', top: '10%', right: '-5%', width: '50%', height: '50%', background: 'radial-gradient(circle, rgba(16,185,129,0.2) 0%, transparent 70%)', filter: 'blur(80px)', zIndex: 1, pointerEvents: 'none' }}></div>
       </div>
 
       {/* Right Form Side */}
