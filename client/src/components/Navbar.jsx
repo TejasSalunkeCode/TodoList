@@ -29,6 +29,14 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-actions">
+        <button
+          className="btn btn-glass theme-toggle-btn"
+          onClick={() => setDarkMode(!darkMode)}
+          style={{ padding: '0.5rem', fontSize: '1.2rem', marginRight: '1rem', borderRadius: '50%' }}
+          title="Toggle Theme"
+        >
+          {darkMode ? '🌙' : '☀️'}
+        </button>
         {user && (
           <span className="nav-greeting">
             Welcome, {user.name.split(' ')[0]}
